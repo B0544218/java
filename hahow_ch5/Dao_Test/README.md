@@ -1,5 +1,5 @@
 
-- sql (命營DB為mytest)
+- sql (命DB為mytest)
 ```sql=
 CREATE TABLE student (
     id INT PRIMARY KEY AUTO_INCREMENT,
