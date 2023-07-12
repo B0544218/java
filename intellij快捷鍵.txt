@@ -1,0 +1,13 @@
+alt + Enter (萬用鍵 對付紅色波浪，他可以自動import所需要的package)
+先在class中命名一個變數，在空白處點右鍵Generate (選擇Getter、Setter)
+當class implements其他interface時，Generate 也可以Override裡面的Method
+
+右側或下方，有個endpoints的按鈕，可以看到整個Project的url路徑
+
+psvm，main方法
+sout，print方法
+
+打開新的project:  Open > 選到project中的pom.xml > Open as project > Trust project
+
+右鍵子project: More Run/Debug > Run Test in ... with Coverage，可以看覆蓋率
+
