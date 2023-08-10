@@ -10,13 +10,20 @@ public class Main {
         Employee alice = new Employee("Alice", aliceDate);
         Employee bob = new Employee("Bob", bobDate);
 
+//        第一種比較 (自己透過Integer.compare寫的比較)
+//        int comparison = bob.getDateOfBirth().compareTo(alice.getDateOfBirth());
+
+        
+        
+//        第二種比較 (透過箭頭函式)
+//        我們定義了一個 Comparator<Employee> 物件，並使用 compareTo 方法比較 Employee 物件的日期。
         Comparator<Employee> employeeComparator = (emp1, emp2) ->
                 emp1.getDateOfBirth().compareTo(emp2.getDateOfBirth());
-
+//        然後，我們使用 employeeComparator 來比較 alice 和 bob 的日期。
         int comparison = employeeComparator.compare(alice, bob);
 
         if (comparison < 0) {
-            System.out.println("Alice is older than Bob.");
+            System.out.println("Alice is younger than Bob.");
         } else if (comparison > 0) {
             System.out.println("Bob is older than Alice.");
         } else {
