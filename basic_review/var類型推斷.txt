@@ -1,0 +1,4 @@
+在jdk10的時候，可以使用var做到向後自動類型推斷
+var entrySet = map.entrySet();
+var iterator = entrySet.iterator();
+
