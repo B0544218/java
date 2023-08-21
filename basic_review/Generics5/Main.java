@@ -1,6 +1,7 @@
 package org.example;
-import org.example.ArrayList;
 public class Main {
+    //重新定義一個compareDates function，<T extends Comparable<T>>：<T> 表示這個方法可以使用一個泛型型別 。T extends Comparable<T> 限制了 T 必須實作了 Comparable 介面
+    //用來確保 obj1 和 obj2可以使用comparable的compareTo方法
     public static <T extends Comparable<T>> int compareDates(T obj1, T obj2) {
         return obj1.compareTo(obj2);
     }
