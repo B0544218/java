@@ -21,13 +21,4 @@ public class MyDate implements Comparable<MyDate> {
         }
         return Integer.compare(this.day, other.day);
     }
-
-    @Override
-    public String toString() {
-        return "MyDate{" +
-                "year=" + year +
-                ", month=" + month +
-                ", day=" + day +
-                '}';
-    }
 }

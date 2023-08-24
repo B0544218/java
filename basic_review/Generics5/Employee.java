@@ -16,12 +16,4 @@ public class Employee {
     public MyDate getDateOfBirth() {
         return dateOfBirth;
     }
-
-    @Override
-    public String toString() {
-        return "Employee{" +
-                "name='" + name + '\'' +
-                ", dateOfBirth=" + dateOfBirth +
-                '}';
-    }
 }
