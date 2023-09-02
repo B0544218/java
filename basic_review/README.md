@@ -1,0 +1,1 @@
+  要注意polymorphism的upcasting問題，以及generics
