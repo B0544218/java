@@ -11,12 +11,14 @@ public class Main {
         cars.add("Mazda");
         System.out.println(cars);
         System.out.println(cars.contains("BMW")); // true
-        for (String car: cars) {
-            System.out.println(car);
-        }
+
+        System.out.println("Sort Result:");
         Collections.sort(cars);
+        cars.remove("Fordd");
+        cars.remove("Ford");
         for (int i=0; i < cars.size(); i++){
             System.out.println(cars.get(i));
         }
+
     }
 }
